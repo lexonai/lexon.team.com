@@ -13,4 +13,7 @@ const csp = (): Plugin => ({
 })
 
 // base './' so the build works on GitHub Pages sub-paths and inside the Electron shell
-export default defineConfig({ plugins: [react(), csp()], base: './' })
+export default defineConfig({
+  plugins: [react(), csp()],
+  base: '/lexon.team.com/'
+})
